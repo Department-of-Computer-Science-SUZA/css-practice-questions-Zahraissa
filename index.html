@@ -1,14 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="google-container">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="google-logo">
+    <form action="https://www.google.com/search" method="GET" class="search-form">
+      <input type="text" name="q" class="search-input" autofocus><br><br>
+      <button type="submit" class="search-button">Google Search</button>
+      <button type="submit" class="feeling-lucky-button">I'm Feeling Lucky</button>
+    </form>
+  </div>
+</body>
+</html>
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .google-container {
+    max-width: 800px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  .google-logo {
+    width: 272px;
+    height: 92px;
+  }
+  
+  .search-form {
+    margin-top: 20px;
+  }
+  
+  .search-input {
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .search-button, .feeling-lucky-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover, .feeling-lucky-button:hover {
+    background-color: #357ae8;
+  }
+
+  <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <p>Please attempt all questions in HTML CSS Assignments</p>
+    <div class="container">
+        <h1>Personal Details</h1>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td>Your Name</td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td>Your Age</td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td>Your Location</td>
+            </tr>
+        </table>
+        <a href="interests.html">Next Page (Interests & Hobbies)</a>
+    </div>
 </body>
-
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interests & Hobbies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interests & Hobbies</h1>
+        <p>Here you can talk about your interests and hobbies.</p>
+        <a href="friends.html">Next Page (Friends)</a>
+        <br>
+        <a href="personal_details.html">Previous Page (Personal Details)</a>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Friends</h1>
+        <p>Here you can talk about your friends.</p>
+        <a href="personal_details.html">Previous Page (Personal Details)</a>
+    </div>
+</body>
+</html>
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Web Development Course</title>
+</head>
+<body>
+    <h1>Course: Introduction to Web Development</h1>
+
+    <p>Welcome to the Introduction to Web Development course! This course will provide you with the foundational knowledge and skills needed to start your journey in web development. Below, you will find a tutorial page containing various resources to help you navigate through the course effectively.</p>
+
+    <hr>
+
+    <h2>Tutorial Page</h2>
+
+    <ol>
+        <li>
+            <h3>Getting Started</h3>
+            <ul>
+                <li>
+                    <h4>Introduction to HTML</h4>
+                    <p>Description: Learn the basics of HTML (Hypertext Markup Language) and how to create the structure of web pages.</p>
+                    <p>Tutorial: <a href="html_tutorial.html">HTML Tutorial</a></p>
+                    <img src="html_image.jpg" alt="HTML Image">
+                </li>
+                <li>
+                    <h4>Introduction to CSS</h4>
+                    <p>Description: Understand CSS (Cascading Style Sheets) and how to add style and design to your web pages.</p>
+                    <p>Tutorial: <a href="css_tutorial.html">CSS Tutorial</a></p>
+                    <img src="css_image.jpg" alt="CSS Image">
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Essential Concepts</h3>
+            <ul>
+                <li>
+                    <h4>Responsive Web Design</h4>
+                    <p>Description: Explore the principles of responsive web design and how to create websites that adapt to various screen sizes.</p>
+                    <p>Tutorial: <a href="responsive_tutorial.html">Responsive Web Design Tutorial</a></p>
+                    <img src="responsive_image.jpg" alt="Responsive Web Design Image">
+                </li>
+                <li>
+                    <h4>Introduction to JavaScript</h4>
+                    <p>Description: Dive into the fundamentals of JavaScript and learn how to add interactivity to your web pages.</p>
+                    <p>Tutorial: <a href="javascript_tutorial.html">JavaScript Tutorial</a></p>
+                    <img src="javascript_image.jpg" alt="JavaScript Image">
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Advanced Topics</h3>
+            <ul>
+                <li>
+                    <h4>Introduction to Bootstrap</h4>
+                    <p>Description: Discover Bootstrap framework for building responsive and mobile-first websites.</p>
+                    <p>Tutorial: <a href="bootstrap_tutorial.html">Bootstrap Tutorial</a></p>
+                    <img src="bootstrap_image.jpg" alt="Bootstrap Image">
+                </li>
+                <li>
+                    <h4>Version Control with Git</h4>
+                    <p>Description: Learn the basics of version control using Git and GitHub for managing your web development projects.</p>
+                    <p>Tutorial: <a href="git_tutorial.html">Git Tutorial</a></p>
+                    <img src="git_image.jpg" alt="Git Image">
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <p>Feel free to explore each tutorial page to enhance your understanding of web development concepts. Happy learning!</p>
+
+</body>
+</html>
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+h3 {
+    color: #777;
+}
+
+/* Tutorial Page Styles */
+.tutorial-page {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.tutorial-section {
+    margin-bottom: 20px;
+}
+
+.tutorial-section h3 {
+    margin-top: 0;
+}
+
+.tutorial-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tutorial-section li {
+    margin-bottom: 10px;
+}
+
+.tutorial-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Links Styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
